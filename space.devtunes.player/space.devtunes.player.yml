@@ -45,7 +45,7 @@ modules:
       - tar xf data.tar.xz
       
       # Copy the Electron application payload into the Flatpak prefix
-      - cp -r usr/lib/dev-tunes /app/main
+      - cp -r opt/DevTunes /app/main
       
       # Install our launch wrapper script
       - install -Dm755 space.devtunes.player.sh /app/bin/space.devtunes.player
@@ -63,7 +63,7 @@ modules:
       # === FLATHUB / REMOTE SOURCE CONFIG ===
       # (This is what you will submit to Flathub. It downloads your GitHub release package)
       - type: file
-        url: https://github.com/ghostmalik/dev-tunes/releases/download/v1.1.0/dev-tunes_1.1.0_amd64.deb
+        url: https://github.com/muhammadazeemGit/devtune/releases/download/v1.1.0/dev-tunes_1.1.0_amd64.deb
         sha256: c28f7438fb6475f76d80a0b7194ff77e0f8ac567acf06f605bc660391ceca576
         only-arches: [x86_64]
 
